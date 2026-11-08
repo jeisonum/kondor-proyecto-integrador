@@ -993,11 +993,11 @@ footer{padding:28px clamp(16px,5vw,72px);border-top:1px solid var(--linea);displ
       <h2 class="d">Una sola <em>ruta</em></h2>
     </div>
     <div class="flow">
-      <div><span class="k">Flórez · CIM</span><b>Problema</b><p>5 certificaciones y casi nada que las explique.</p></div>
+      <div><span class="k">Miguel · Comunicación</span><b>Problema</b><p>5 certificaciones y casi nada que las explique.</p></div>
       <div><span class="k">Encuesta</span><b>39 voces</b><p>14 preguntas sobre 7 variables.</p></div>
-      <div><span class="k">Torres · Analítica</span><b>Datos</b><p>Recordación alta, publicidad que no llega.</p></div>
-      <div><span class="k">Arboleda · Canales</span><b>Canales</b><p>Fuerte en dotación, débil hacia el consumidor.</p></div>
-      <div><span class="k">Vélez · Integrador</span><b>Campaña</b><p>Mostrar lo que hay dentro de cada bota.</p></div>
+      <div><span class="k">Luis · Analítica</span><b>Datos</b><p>Recordación alta, publicidad que no llega.</p></div>
+      <div><span class="k">Jair · Canales</span><b>Canales</b><p>Fuerte en dotación, débil hacia el consumidor.</p></div>
+      <div><span class="k">Julián · Integrador</span><b>Campaña</b><p>Mostrar lo que hay dentro de cada bota.</p></div>
     </div>
     <p class="close" style="margin-top:44px">Kondor ya tiene la confianza de la gente. Lo que le falta es <em>contar por qué</em>, en el canal donde la gente la quiere encontrar.</p>
     <span class="eyebrow" style="margin-top:40px">Docentes</span>
@@ -1079,7 +1079,7 @@ const ICON={
  int:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21l1.4-7L2 9.3l7-.8z"/></svg>',
  docs:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 10v6m0 0-3-3m3 3 3-3"/></svg>',
  fin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 21V4h11l-2 4 2 4H5"/></svg>'};
-const TABS=[["inicio","Inicio","Kondor hoy"],["cim","Flórez","Comunicación Integrada"],["ana","Torres","Analítica Comercial"],["can","Arboleda","Canales · simulación"],["int","Vélez","Proyecto integrador"],["fin","Cierre","Una sola ruta"],["docs","Entregables","Word, Excel y más"]];
+const TABS=[["inicio","Inicio","Kondor hoy"],["cim","Miguel","Comunicación Integrada"],["ana","Luis","Analítica Comercial"],["can","Jair","Canales · simulación"],["int","Julián","Proyecto integrador"],["fin","Cierre","Una sola ruta"],["docs","Entregables","Word, Excel y más"]];
 TABS.forEach(([id,t,s])=>$('#tabs').appendChild(el('button',{class:'tab'+(id==='docs'?' tdocs':''),type:'button',role:'tab',id:'tab-'+id,'aria-selected':'false','data-tab-go':id},`${ICON[id]}<span>${t} <small>${s}</small></span>`)));
 const SEC=$$('.sec');
 let tab='inicio';
@@ -1154,10 +1154,10 @@ Object.entries(DOCS).forEach(([k,g])=>{
 
 /* ---------- portada: equipo, ruta y bota 360 ---------- */
 [$('#team'),$('#team2')].forEach(c=>TEAM.forEach(n=>c.appendChild(el('span',{},n))));
-[["cim","Flórez · CIM","El problema","5 certificaciones y casi nada que las explique."],
- ["ana","Torres · Analítica","Los datos","39 respuestas que puedes filtrar en vivo."],
- ["can","Arboleda · Canales","La ruta de la bota","La simulación de cómo funciona Kondor."],
- ["int","Vélez · Integrador","La campaña","Lo que no se ve: abrir la bota en capas."]].forEach(([id,m,t,p])=>
+[["cim","Miguel · Comunicación","El problema","5 certificaciones y casi nada que las explique."],
+ ["ana","Luis · Analítica","Los datos","39 respuestas que puedes filtrar en vivo."],
+ ["can","Jair · Canales","La ruta de la bota","La simulación de cómo funciona Kondor."],
+ ["int","Julián · Integrador","La campaña","Lo que no se ve: abrir la bota en capas."]].forEach(([id,m,t,p])=>
   $('#route').appendChild(el('button',{type:'button','data-tab-go':id},`<span class="m">${m}</span><b>${t}</b><p>${p}</p><span class="go">Abrir pestaña →</span>`)));
 const FR=$$('#stage img'),VIEWS=['Lado','3/4','Frente','3/4','Lado','Arriba'];
 let fi=0,spinT=null,touched=false;
