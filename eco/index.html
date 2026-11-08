@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ECO · Investigación y estrategia de mercados</title>
+<meta name="description" content="ECO escucha al mercado para que su marca tome mejores decisiones. Escríbanos.">
+<meta name="theme-color" content="#021E42">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#021E42;--navy2:#03284F;--teal:#00A3B9;--org:#FD8B00;--fondo:#F3F6F9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Montserrat,system-ui,sans-serif;background:var(--fondo);color:var(--navy);-webkit-font-smoothing:antialiased}
+.top{background:var(--navy);color:#fff;padding:34px 22px 120px;position:relative;overflow:hidden;text-align:center}
+.top:before{content:"";position:absolute;width:520px;height:520px;left:50%;top:-120px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(0,163,185,.35),transparent)}
+.top .lg{position:relative;width:min(300px,78vw);margin:0 auto}
+.top .hi{position:relative;margin-top:22px;font-size:15px;font-weight:600;color:#bfe3ea;letter-spacing:.1em;text-transform:uppercase}
+.top h1{position:relative;font-size:clamp(26px,7vw,34px);line-height:1.15;font-weight:800;margin-top:8px}
+.top h1 em{font-style:normal;color:var(--teal)}
+main{max-width:520px;margin:-96px auto 0;padding:0 18px 40px;position:relative}
+.vid{border-radius:22px;overflow:hidden;background:#000;box-shadow:0 24px 50px -24px rgba(2,30,66,.6);aspect-ratio:9/16;max-height:72vh;margin:0 auto;position:relative}
+.vid video{width:100%;height:100%;display:block;object-fit:cover}
+.vcap{text-align:center;font-size:13px;color:#6B7C90;font-weight:600;margin-top:10px}
+.btns{display:grid;gap:12px;margin-top:22px}
+.b{display:flex;align-items:center;justify-content:center;gap:12px;padding:17px 18px;border-radius:16px;font-weight:700;font-size:17px;text-decoration:none;color:#fff;background:var(--navy);transition:transform .15s}
+.b:active{transform:scale(.98)}
+.b svg{width:24px;height:24px;flex:none}
+.b.wa{background:#1FAF55}
+.b.ln{background:#fff;color:var(--navy);border:2px solid #DCE3EA}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:#fff;border-radius:20px;padding:22px;margin-top:22px;box-shadow:0 8px 24px -16px rgba(2,30,66,.35)}
+.card h2{font-size:18px;font-weight:800;display:flex;align-items:center;gap:10px}
+.card h2:before{content:"";width:7px;height:20px;border-radius:3px;background:var(--teal)}
+.card p{font-size:15px;line-height:1.55;color:#3A4D63;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:14px}
+.steps div{background:var(--fondo);border-radius:12px;padding:12px 2px;text-align:center;font-size:10.5px;font-weight:700;color:var(--navy)}
+.steps i{display:grid;place-items:center;width:28px;height:28px;margin:0 auto 6px;border-radius:50%;background:var(--teal);color:#fff;font-style:normal;font-size:13px}
+.steps div:nth-child(3) i{background:var(--org)}
+.team{display:grid;gap:10px;margin-top:14px}
+.tm{display:flex;align-items:center;gap:12px}
+.tm .av{width:42px;height:42px;border-radius:50%;background:var(--navy2);color:#fff;display:grid;place-items:center;font-weight:800;font-size:15px;flex:none}
+.tm:nth-child(2n) .av{background:var(--teal)}
+.tm b{display:block;font-size:15px}.tm span{font-size:13px;color:#6B7C90;font-weight:600}
+.case{display:flex;gap:10px;margin-top:14px}
+.case div{flex:1;background:var(--fondo);border-radius:12px;padding:12px;border-top:4px solid var(--teal)}
+.case div:nth-child(2){border-top-color:var(--navy2)}.case div:nth-child(3){border-top-color:var(--org)}
+.case b{display:block;font-size:22px;font-weight:800}
+.case span{font-size:12px;font-weight:600;color:#3A4D63;line-height:1.3;display:block;margin-top:4px}
+footer{text-align:center;font-size:12px;color:#8394A7;padding:10px 20px 34px;line-height:1.6}
+footer i{font-style:italic;color:var(--navy);font-weight:500;font-size:14px;display:block;margin-bottom:8px}
+</style></head><body>
+<header class="top">
+  <div class="lg" id="lg"></div>
+  <div class="hi">Gracias por visitarnos</div>
+  <h1>Lo que el mercado le está diciendo a <em>su marca</em></h1>
+</header>
+<main>
+  <div class="vid"><video src="ruta-eco.mp4" poster="ruta-poster.jpg" controls playsinline preload="metadata"></video></div>
+  <div class="vcap">La ruta ECO · 21 s</div>
+
+  <div class="btns">
+    <a class="b wa" id="wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Escríbanos por WhatsApp</a>
+    <div class="row">
+      <a class="b" id="tel" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2z"/></svg>Llamar</a>
+      <a class="b" id="mail" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Correo</a>
+    </div>
+    <a class="b ln" href="eco.vcf" download="ECO.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>Guardar contacto de ECO</a>
+  </div>
+
+  <section class="card">
+    <h2>Qué hacemos</h2>
+    <p>Escuchamos al mercado, encontramos qué hay detrás de cada decisión y lo convertimos en una estrategia que la marca puede ejecutar.</p>
+    <div class="steps"><div><i>1</i>Escuchar</div><div><i>2</i>Analizar</div><div><i>3</i>Diagnosticar</div><div><i>4</i>Recomendar</div></div>
+  </section>
+
+  <section class="card">
+    <h2>Caso Calzado Kondor</h2>
+    <p>Investigamos la publicidad y la promoción de Kondor frente al consumidor final de Medellín.</p>
+    <div class="case"><div><b>39</b><span>personas encuestadas</span></div><div><b>59%</b><span>recuerda primero a Kondor</span></div><div><b>25,6%</b><span>ve su publicidad</span></div></div>
+    <div class="btns"><a class="b ln" href="https://jeisonum.github.io/kondor-proyecto-integrador/">Ver el informe completo →</a></div>
+  </section>
+
+  <section class="card">
+    <h2>Equipo ECO</h2>
+    <div class="team" id="team"></div>
+  </section>
+</main>
+<footer><i>ECO · Investigación y estrategia de mercados</i>Proyecto integrador · Técnico Laboral en Mercadeo · CESDE 2026<br>ECO es una empresa creada para este proyecto académico.</footer>
+<script>
+/* ====== DATOS DE CONTACTO: cambiar aquí ====== */
+const CONTACTO={whatsapp:'573000000000',telefono:'+57 300 000 0000',correo:'eco.investigacion@gmail.com',
+  mensaje:'Hola ECO, los vi en la Muestra Comercial de CESDE y quiero saber más.'};
+const EQUIPO=[['Daniel Gil','Equipo ECO'],['Elizabeth Valencia','Equipo ECO'],['Jeison Uribe','Equipo ECO'],['Jeimy Amaya','Equipo ECO'],['Nilson Henao','Equipo ECO']];
+/* ============================================ */
+document.getElementById('wa').href='https://wa.me/'+CONTACTO.whatsapp+'?text='+encodeURIComponent(CONTACTO.mensaje);
+document.getElementById('tel').href='tel:'+CONTACTO.telefono.replace(/\s/g,'');
+document.getElementById('mail').href='mailto:'+CONTACTO.correo+'?subject='+encodeURIComponent('Contacto desde la Muestra Comercial');
+document.getElementById('team').innerHTML=EQUIPO.map(([n,c])=>`<div class="tm"><div class="av">${n.split(' ').map(w=>w[0]).join('')}</div><div><b>${n}</b><span>${c}</span></div></div>`).join('');
+function arc(cx,cy,r,a0,a1){const p=a=>[cx+r*Math.cos(a*Math.PI/180),cy+r*Math.sin(a*Math.PI/180)];const[x0,y0]=p(a0),[x1,y1]=p(a1);const l=((a1-a0)%360+360)%360>180?1:0;return `M${x0} ${y0}A${r} ${r} 0 ${l} 1 ${x1} ${y1}`}
+document.getElementById('lg').innerHTML=`<svg viewBox="0 0 520 290" style="width:100%"><text x="18" y="190" font-family="Montserrat" font-weight="800" font-size="200" letter-spacing="-8" fill="#fff">EC</text>${[['#00A3B9',-88,-22],['#FD8B00',-14,48],['#fff',56,262]].map(([c,a,b])=>`<path d="${arc(406,120,74,a,b)}" fill="none" stroke="${c}" stroke-width="34"/>`).join('')}${[[378,136,14,22],[398,119,14,39],[418,98,14,60]].map(([x,y,w,h])=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="3" fill="#00A3B9"/>`).join('')}<text x="22" y="238" font-family="Montserrat" font-weight="700" font-size="19.6" letter-spacing=".5" fill="#fff">INVESTIGACIÓN Y ESTRATEGIA DE MERCADOS</text></svg>`;
+</script>
+</body></html>
