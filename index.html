@@ -542,6 +542,14 @@ footer{padding:28px clamp(16px,5vw,72px);border-top:1px solid var(--linea);displ
   .tab small{display:none}
   .pager .pos{min-width:0;max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 }
+.ecocom{background:#021E42;color:#fff}
+.ecocom h2.d{color:#fff}.ecocom h2.d em{color:#00A3B9}
+.ecocom .lead{color:#cfe3ea}
+.ecocom .ecov{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);background:#000;aspect-ratio:16/9;margin-top:26px}
+.ecocom .ecov video{display:block;width:100%;height:100%}
+.ecocom .ecometa{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ecocom .ecometa span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:8px 16px;font-size:14px;font-weight:600;color:#e6f2f5}
+.ecocom .slash span{color:#fff}
 </style>
 </head>
 <body>
@@ -583,6 +591,18 @@ footer{padding:28px clamp(16px,5vw,72px);border-top:1px solid var(--linea);displ
     </div>
   </div>
   <div class="wrap full"><div class="route" id="route"></div></div>
+</section>
+
+<section class="sec ecocom" data-tab="inicio" id="comercial" data-t="Comercial ECO">
+  <div class="wrap">
+    <div class="shead">
+      <div class="k"><span class="slash"><span>Video promocional</span></span></div>
+      <h2 class="d">El mercado <em>está hablando</em></h2>
+      <p class="lead">El comercial de ECO para la muestra comercial: 58 segundos sobre cómo escuchamos, analizamos e interpretamos lo que el mercado le dice a una marca, con el caso Kondor como prueba.</p>
+    </div>
+    <div class="ecov"><video id="ecovid" controls playsinline preload="none" poster="assets/eco-poster.jpg" src="assets/eco-comercial.mp4" aria-label="Comercial de ECO: El mercado está hablando"></video></div>
+    <div class="ecometa"><span>58 s · 16:9</span><span>Voz y música: elevenlabs.io</span><span>Tomas: Google Flow</span><span>Motion graphics: equipo ECO</span></div>
+  </div>
 </section>
 
 <section class="sec alt" data-tab="inicio" id="marca" data-t="La marca">
@@ -1415,7 +1435,7 @@ $('#vbody').addEventListener('scroll',()=>{
 function drawSheet(s){
   const body=$('#vbody');body.scrollTop=0;
   const S=[['dash','Dashboard'],['frec','Frecuencias'],['base','Base limpia']];
-  $('#vsheets').innerHTML=S.map(([k,n])=>`<button type="button" class="${k===s?'on':''}" data-sheet="${k}">${n}</button>`).join('')+'<span class="vnote">La hoja Original está en el archivo descargable, con los nombres reemplazados por códigos.</span>';
+  $('#vsheets').innerHTML=S.map(([k,n])=>`<button type="button" class="${k===s?'on':''}" data-sheet="${k}">${n}</button>`).join('')+'<span class="vnote">La hoja Original (con nombres de los encuestados) solo está en el archivo descargable.</span>';
   $$('#vsheets [data-sheet]').forEach(b=>b.onclick=()=>drawSheet(b.dataset.sheet));
   if(s==='dash'){body.innerHTML=`<div class="xsheet"><img class="xdash" src="${XLS.dash}" alt="Hoja Dashboard del Excel: indicadores, tablas y gráficos con filtros por edad y ocupación"><p class="note">En Excel, las celdas amarillas tienen listas desplegables para filtrar por edad y ocupación. En la pestaña de Analítica de esta página está el mismo filtro funcionando.</p></div>`;$('#vpos').textContent='Hoja Dashboard';}
   if(s==='frec'){
